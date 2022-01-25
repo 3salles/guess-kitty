@@ -35,7 +35,7 @@ export const UploadContent = () => {
   return (
     <>
       {file ? (
-        <Center  border={"1px dashed white"}>
+        <Center mt="8" border={"1px dashed white"}>
           <Image src={file?.preview} alt="Imagem carregada" />
         </Center>
       ) : (

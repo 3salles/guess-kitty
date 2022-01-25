@@ -5,6 +5,7 @@ import {
   Tab,
   TabPanel,
 } from "@chakra-ui/react";
+import { CamContent } from "./atoms/CamContainer";
 import { UploadContent } from "./atoms/UploadContent";
 
 export const TabList = () => {
@@ -20,7 +21,7 @@ export const TabList = () => {
           <UploadContent />
         </TabPanel>
         <TabPanel>
-          <p>two!</p>
+          <CamContent />
         </TabPanel>
       </TabPanels>
     </Tabs>
