@@ -5,6 +5,7 @@ import {
   Tab,
   TabPanel,
 } from "@chakra-ui/react";
+import { UploadContent } from "./atoms/UploadContent";
 
 export const TabList = () => {
   return (
@@ -16,7 +17,7 @@ export const TabList = () => {
 
       <TabPanels>
         <TabPanel>
-          <p>one!</p>
+          <UploadContent />
         </TabPanel>
         <TabPanel>
           <p>two!</p>

@@ -18,9 +18,9 @@ interface DrawerProps {
 
 export const Drawer = ({ isOpen, onClose }: DrawerProps) => {
   return (
-    <ChakraDrawer isOpen={isOpen} placement="right" onClose={onClose}>
+    <ChakraDrawer isOpen={isOpen} placement="right" onClose={onClose} size="md" >
       <DrawerOverlay />
-      <DrawerContent bg="purple.400" >
+      <DrawerContent bg="purple.400">
         <DrawerCloseButton />
         <DrawerHeader>Escolha forma de envio</DrawerHeader>
 
