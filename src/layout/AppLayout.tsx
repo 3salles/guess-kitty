@@ -11,7 +11,7 @@ interface AppLayoutProps {
 export const AppLayout = ({children}: AppLayoutProps) => {
   return (
     <Box h="100vh" bgGradient="linear(to right, #B993D6, #8CA6DB)">
-      <Flex flexDir="column">
+      <Flex h="full" flexDir="column">
         <Header />
         {children}
         <Footer />
