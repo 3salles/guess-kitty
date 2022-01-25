@@ -1,5 +1,5 @@
-import { Box, Center, Image, Text } from "@chakra-ui/react";
-import { useCallback, useEffect, useState } from "react";
+import { Center, Image, Text } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 import { useDropzone } from "react-dropzone";
 
 interface ImageFile extends File {

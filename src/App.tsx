@@ -6,11 +6,18 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { AppLayout } from "./layout/AppLayout";
 import theme from "./styles/theme";
 import { Home } from "./components/pages/home";
+import { Loader } from "./components/ui/Loader";
 
-export const App = () => (
-  <ChakraProvider theme={theme}>
+
+
+export const App = () => {
+  const isLoading = true;
+
+  return (
+    <ChakraProvider theme={theme}>
     <AppLayout>
-      <Home />
+      {isLoading ? <Loader /> : <Home />}
     </AppLayout>
   </ChakraProvider>
-);
+  )
+};
