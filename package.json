@@ -6,6 +6,8 @@
     "@chakra-ui/react": "^1.7.4",
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",
+    "@fontsource/merienda": "^4.5.0",
+    "@fontsource/open-sans": "^4.5.2",
     "@testing-library/jest-dom": "^5.9.0",
     "@testing-library/react": "^10.2.1",
     "@testing-library/user-event": "^12.0.2",
