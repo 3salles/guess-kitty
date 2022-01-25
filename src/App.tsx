@@ -11,7 +11,7 @@ import { Loader } from "./components/ui/Loader";
 
 
 export const App = () => {
-  const isLoading = true;
+  const isLoading = false;
 
   return (
     <ChakraProvider theme={theme}>
