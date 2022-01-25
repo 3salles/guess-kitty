@@ -1,5 +1,6 @@
 import { Box, Flex } from "@chakra-ui/react";
 import { ReactNode } from "react";
+import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 
 interface AppLayoutProps {
@@ -12,6 +13,7 @@ export const AppLayout = ({children}: AppLayoutProps) => {
       <Flex flexDir="column">
         <Header />
         {children}
+        <Footer />
       </Flex>
       </Box>
   );
