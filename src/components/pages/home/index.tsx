@@ -1,17 +1,15 @@
-import { useDisclosure } from "@chakra-ui/react";
 import { useState } from "react";
-import { Drawer } from "../../common/Drawer";
-import { ConfirmSection } from "./components/confirm";
 import { MainContent } from "./components/MainContent";
+import { ResultSection } from "./components/ResultSection";
 
 export const Home = () => {
-  const isCat = true;
+  const isCat = false;
   const [resultChecked, setResultChecked] = useState(true);
 
   return (
     <>
       {resultChecked ? (
-        <ConfirmSection setResultChecked={setResultChecked} />
+        <ResultSection isCat={isCat}  setResultChecked={setResultChecked}/>
       ) : (
         <MainContent />
       )}
