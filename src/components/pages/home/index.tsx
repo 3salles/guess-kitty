@@ -3,12 +3,12 @@ import { MainContent } from "./components/MainContent";
 import { ResultSection } from "./components/ResultSection";
 
 export const Home = () => {
-  const { isCat, resultChecked, setResultChecked } = useKitty();
+  const { resultChecked} = useKitty();
 
   return (
     <>
       {resultChecked ? (
-        <ResultSection isCat={isCat} setResultChecked={setResultChecked} />
+        <ResultSection  />
       ) : (
         <MainContent />
       )}

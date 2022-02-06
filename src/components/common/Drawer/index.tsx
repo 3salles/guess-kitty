@@ -8,6 +8,7 @@ import {
   DrawerCloseButton,
   Button,
 } from "@chakra-ui/react";
+import { useKitty } from "../../../hooks/useKitty";
 import { TabList } from "./components/TabList";
 
 
@@ -17,6 +18,8 @@ interface DrawerProps {
 }
 
 export const Drawer = ({ isOpen, onClose }: DrawerProps) => {
+  const {handleOnSend} = useKitty()
+
   return (
     <ChakraDrawer isOpen={isOpen} placement="right" onClose={onClose} size="md" >
       <DrawerOverlay />
@@ -32,7 +35,7 @@ export const Drawer = ({ isOpen, onClose }: DrawerProps) => {
           <Button variant="outline" colorScheme="white" mr={3} onClick={onClose}>
             Cancelar
           </Button>
-          <Button colorScheme="pink" color="white">
+          <Button colorScheme="pink" color="white" onClick={handleOnSend}>
             Enviar
           </Button>
         </DrawerFooter>
