@@ -2,7 +2,8 @@ import { Center, Image, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { useDropzone } from "react-dropzone";
 
-interface ImageFile extends File {
+
+interface ImageFile extends Blob {
   preview: string;
 }
 
@@ -19,6 +20,18 @@ export const UploadContent = () => {
       );
     },
   });
+
+  // const getBase64 = async (file: ImageFile | undefined): Promise<string | undefined> => {
+  //   var reader = new FileReader();
+  //   reader.readAsDataURL(file as Blob);
+  
+  //   return new Promise((reslove, reject) => {
+  //     reader.onload = () => reslove(reader.result as any);
+  //     reader.onerror = (error) => reject(error);
+  //   })
+  // }
+
+  console.log(file)
 
   useEffect(
     () => () => {

@@ -1,15 +1,14 @@
-import { useState } from "react";
+import { useKitty } from "../../../hooks/useKitty";
 import { MainContent } from "./components/MainContent";
 import { ResultSection } from "./components/ResultSection";
 
 export const Home = () => {
-  const isCat = false;
-  const [resultChecked, setResultChecked] = useState(true);
+  const { isCat, resultChecked, setResultChecked } = useKitty();
 
   return (
     <>
       {resultChecked ? (
-        <ResultSection isCat={isCat}  setResultChecked={setResultChecked}/>
+        <ResultSection isCat={isCat} setResultChecked={setResultChecked} />
       ) : (
         <MainContent />
       )}
