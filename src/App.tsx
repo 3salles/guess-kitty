@@ -7,17 +7,16 @@ import { AppLayout } from "./layout/AppLayout";
 import theme from "./styles/theme";
 import { Home } from "./components/pages/home";
 import { Loader } from "./components/ui/Loader";
-
-
+import { KittyProvider } from "./hooks/useKitty";
 
 export const App = () => {
-  const isLoading = false;
+  const isLoading = true;
 
   return (
     <ChakraProvider theme={theme}>
-    <AppLayout>
-      {isLoading ? <Loader /> : <Home />}
-    </AppLayout>
-  </ChakraProvider>
-  )
+      <KittyProvider>
+        <AppLayout>{isLoading ? <Loader /> : <Home />}</AppLayout>
+      </KittyProvider>
+    </ChakraProvider>
+  );
 };
