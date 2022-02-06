@@ -1,59 +1,102 @@
-This project was bootstrapped with
-[Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
 
-## Available Scripts
+  <h3 align="center">Gatinho!</h3>
 
-In the project directory, you can run:
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=Lincense&message=MIT&color=0000ff " alt="License" />
+</p>
 
-### `yarn start`
+<p align="center">
+    This site was created to obtain parcial grade in Distributed Systems subject
+    <br />
+    <br />
+    <a href="README.md">🇺🇸English</a>
+    ·
+    <a href="README-pt.md">🇧🇷Portuguese</a>
+  </p>
+</p>
 
-Runs the app in the development mode.<br /> Open
-[http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- TABLE OF CONTENTS -->
+## 🗂 Table of Contents
 
-The page will reload if you make edits.<br /> You will also see any lint errors
-in the console.
+* [About the Project](#book-about-the-project)
+  * [Technologies](#computer-technologies)
+* [Installation](#bricks-installation)
+  * [Prerequisites](#construction-prerequisites)
+  * [Front-end](#lipstick-front-end)
+    * [Installing Dependencies](#construction-installing-dependencies)
+    * [Running Front-end](#arrow_forward-running-front-end)
+* [License](#page_facing_up-license)
+* [Authors](#woman_technologist-man_technologist-authors)
 
-### `yarn test`
+## :book: About The Project
 
-Launches the test runner in the interactive watch mode.<br /> See the section
-about
-[running tests](https://facebook.github.io/create-react-app/docs/running-tests)
-for more information.
+The project is to use image processing with Python [where repository is here](), where you can send a image to check if it is a cat or not.
 
-### `yarn build`
+* Screenshots
 
-Builds the app for production to the `build` folder.<br /> It correctly bundles
-React in production mode and optimizes the build for the best performance.
+<img src='https://user-images.githubusercontent.com/62452619/145735031-ab919beb-ee60-4a0f-b360-32191567e1bf.png' alt='Home Screen' width='50%' />
+<img src='https://user-images.githubusercontent.com/62452619/145735033-1951591f-bb7c-4805-aceb-112c9afd2bfd.png' alt='List rescued people' width='50%' />
 
-The build is minified and the filenames include the hashes.<br /> Your app is
-ready to be deployed!
+<img src='https://user-images.githubusercontent.com/62452619/145735037-7719ce26-c558-46a5-b158-6d2156bfe9a0.png' alt='New rescued person' width='50%' />
 
-See the section about
-[deployment](https://facebook.github.io/create-react-app/docs/deployment) for
-more information.
 
-### `yarn eject`
+### :computer: Technologies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* [TypeScript](https://www.typescriptlang.org)
+* [React.js](https://reactjs.org/docs/getting-started.html)
+* [Yarn](https://yarnpkg.com)
+* [Axios](https://axios-http.com/docs/intro)
+* [MirageJS](https://miragejs.com)
 
-If you aren’t satisfied with the build tool and configuration choices, you can
-`eject` at any time. This command will remove the single build dependency from
-your project.
+## :bricks: Installation
 
-Instead, it will copy all the configuration files and the transitive
-dependencies (webpack, Babel, ESLint, etc) right into your project so you have
-full control over them. All of the commands except `eject` will still work, but
-they will point to the copied scripts so you can tweak them. At this point
-you’re on your own.
+This project use [Node.js](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com), you will need them to build its dependencies.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for
-small and middle deployments, and you shouldn’t feel obligated to use this
-feature. However we understand that this tool wouldn’t be useful if you couldn’t
-customize it when you are ready for it.
+### :construction: Prerequisites
 
-## Learn More
+Clone this project repository:
+```bash
 
-You can learn more in the
-[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+$ git clone https://github.com/3salles/guess-kitty.git
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Enter in `guess-kitty` folder:
+
+$ cd guess-kitty
+```
+
+🚨 If you don't have git in your machine, you can install it [here](https://git-scm.com/downloads).
+
+## :lipstick: Front-end
+
+### :construction: Installing Dependencies
+
+In guess-kitty folder, install dependencies by the following command:
+
+```bash
+$ yarn install
+```
+
+### :arrow_forward: Running Front-end
+
+Run the following command to see the application:
+
+```bash
+$ yarn start
+```
+
+The application will be available on `http://localhost:3000`.
+
+## :page_facing_up: License
+
+This project uses [MIT](https://github.com/3salles/user-crud/blob/main/LICENSE) license.
+
+## :woman_technologist: :man_technologist: Authors
+
+[Beatriz Salles](https://github.com/3salles)
+<br/>
+[Lucas Cléopas](https://github.com/DarkCleopas)
+
+
+
+<p align="center">Developed with 💜</p>
