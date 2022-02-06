@@ -31,7 +31,7 @@
 
 ## :book: About The Project
 
-The project is to use image processing with Python [where repository is here](), where you can send a image to check if it is a cat or not.
+The project is to use image processing with Python ([repository is here](https://github.com/DarkCleopas/gatinho)), where you can send a image to check if it is a cat or not.
 
 * Screenshots
 
