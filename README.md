@@ -35,10 +35,32 @@ The project is to use image processing with Python ([repository is here](https:/
 
 * Screenshots
 
-<img src='https://user-images.githubusercontent.com/62452619/145735031-ab919beb-ee60-4a0f-b360-32191567e1bf.png' alt='Home Screen' width='50%' />
-<img src='https://user-images.githubusercontent.com/62452619/145735033-1951591f-bb7c-4805-aceb-112c9afd2bfd.png' alt='List rescued people' width='50%' />
-
-<img src='https://user-images.githubusercontent.com/62452619/145735037-7719ce26-c558-46a5-b158-6d2156bfe9a0.png' alt='New rescued person' width='50%' />
+<table>
+  <tr>
+    <td>Home</td>
+    <td>Upload screen</td>
+  </tr>
+  <tr>
+    <td><img width="500" alt="Home Screen" src="https://user-images.githubusercontent.com/62452619/152693175-ba906d8d-2c7f-4191-9db5-aa86e5740423.png"></td>
+    <td><img width="500" alt="Upload Screen" src="https://user-images.githubusercontent.com/62452619/152693178-a92e1bec-ba21-4daf-82cc-991e8e48e8f6.png"></td>
+  </tr>
+  <tr>
+    <td>Take picture screen</td>
+    <td>Checking screen</td>
+  </tr>
+  <tr>
+    <td><img width="500" alt="Cam Screen" src="https://user-images.githubusercontent.com/62452619/152693167-be6fed81-5593-4916-a76b-216534a5b3b0.png"></td>
+    <td><img width="500" alt="Checking Screen" src="https://user-images.githubusercontent.com/62452619/152693165-3a4cc7ae-6aa1-483b-a2fc-1824ce53f822.png"></td>
+  </tr>
+  <tr>
+    <td>Result screen:it is a cat</td>
+    <td>Result screen: it is not a cat</td>
+  </tr>
+  <tr>
+    <td><img width="500" alt="It is a cat" src="https://user-images.githubusercontent.com/62452619/152693169-719e93ae-1db2-4765-a961-1304a4bc061b.png"></td>
+    <td><img width="500" alt="It is not a cat" src="https://user-images.githubusercontent.com/62452619/152693177-bf1ec5f1-b73d-4ad7-8981-a215eaa7cdba.png"></td>
+  </tr>
+ </table>
 
 
 ### :computer: Technologies
