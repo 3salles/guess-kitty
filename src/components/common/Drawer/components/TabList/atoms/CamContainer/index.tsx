@@ -1,9 +1,8 @@
-import { Button, Center, Image, Text, VStack } from "@chakra-ui/react";
-import {  useState } from "react";
+import { Center, VStack } from "@chakra-ui/react";
+import { useState } from "react";
 
 import { CameraSection } from "./components/CameraSection";
 import { InitialContent } from "./components/InitialContent";
-
 
 export const CamContent = () => {
   const [showCamera, setShowCamera] = useState(false);
@@ -12,7 +11,7 @@ export const CamContent = () => {
     <Center mt="8">
       <VStack spacing="8">
         {showCamera ? (
-          <CameraSection  />
+          <CameraSection />
         ) : (
           <InitialContent setShowCamera={setShowCamera} />
         )}
@@ -20,4 +19,3 @@ export const CamContent = () => {
     </Center>
   );
 };
-

@@ -1,9 +1,13 @@
 import { Center, Image, Text } from "@chakra-ui/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDropzone } from "react-dropzone";
+import { useKitty } from "../../../../../../../hooks/useKitty";
 
 export const UploadContent = () => {
+  const {setImage64} = useKitty()
   const [file, setFile] = useState<any>();
+  
+  
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     accept: "image/*",
@@ -29,6 +33,10 @@ export const UploadContent = () => {
       };
     });
   };
+
+  useEffect(() => {
+    setImage64(file)
+  }, [setImage64, file])
 
   return (
     <>

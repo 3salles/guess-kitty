@@ -1,7 +1,8 @@
 import { Button, Image } from "@chakra-ui/react";
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 import Webcam from "react-webcam";
+import { useKitty } from "../../../../../../../../../hooks/useKitty";
 
 const videoConstraints = {
   width: 1280,
@@ -10,18 +11,22 @@ const videoConstraints = {
 };
 
 export const CameraSection = () => {
-  const [image, setImage] = useState<string | null | undefined>("");
+  const {setImage64} = useKitty()
+  const [image, setImage] = useState<any>("");
   const webcamRef = useRef<Webcam>(null);
 
   const capture = useCallback(() => {
     const imageSrc = webcamRef?.current?.getScreenshot();
-    console.log(imageSrc);
     setImage(imageSrc);
   }, [webcamRef, setImage]);
 
   const handleCapture = () => {
     capture();
   };
+
+  useEffect(() => {
+    setImage64(image)
+  }, [setImage64, image])
   return (
     <>
       {image ? (
