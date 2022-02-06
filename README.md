@@ -89,7 +89,7 @@ The application will be available on `http://localhost:3000`.
 
 ## :page_facing_up: License
 
-This project uses [MIT](https://github.com/3salles/user-crud/blob/main/LICENSE) license.
+This project uses [MIT](https://github.com/3salles/guess-kitty/blob/main/LICENSE) license.
 
 ## :woman_technologist: :man_technologist: Authors
 
